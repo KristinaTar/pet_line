@@ -1,0 +1,153 @@
+@import './../variables';
+
+.header {
+
+  &__container {
+    position: relative;
+    height: 730px;
+
+    &::after {
+      position:absolute;
+      bottom: 0;
+      display:block;
+      content:'';
+      background-color: #705E52;
+      border-bottom:1px solid #FEFEFE;
+      width:100%;
+      height:1px;
+    }
+  }
+
+  &__heartIcon{
+    position: absolute;
+    left: -7.5px;
+    bottom: -7.5px;
+    z-index: 1;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 29.6px;
+    left: 271px;
+    width: 567px;
+    height: 30px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    color: $main-brown;
+    font-size: 16px;
+    font-family: $font-family;
+    background-color: rgba(250, 236, 224, 0.3);
+    font-weight: 400;
+    z-index: 100;
+  }
+
+  &__nav--icon {
+    vertical-align: middle;
+    padding-right: 8px;
+  }
+
+  &__nav--title {
+    background-color: $main-brown;
+    width: 235px;
+    height: 30px;
+    color: #FEFEFE;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 6px 14px;
+    box-sizing: border-box;
+  }
+
+  &__topLeftBlock {
+    width: 695px;
+    height: 408px;
+    background-color: rgba(250, 236, 224, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__centerBlock {
+    position: absolute;
+    top: 140px;
+    right: 267px;
+    z-index: 100;
+  }
+
+  &__topRightBlock {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__bottomLeftBlock {
+    position: absolute;
+    bottom: 20px;
+    z-index: -1;
+  }
+
+  &__bottomRightBlock{
+    position: absolute;
+    width: 683px;
+    height: 467px;
+    background: rgba(250, 236, 224, 0.3);
+    top: 262px;
+    left: 427px;
+    color: $main-brown;
+    font-family: $font-family;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 46px;
+
+    &::before {
+      position:absolute;
+      display:block;
+      content:'';
+      background-color: #705E52;
+      border-left:1px solid #FEFEFE;
+      height:100%;
+      width:1px;
+    }
+  }
+
+  &__bottomRightBlock--text{
+    display: block;
+    padding: 286px 0 91px 92px;
+
+  }
+
+  &__socialMedia{
+    width: 32px;
+    height:105px;
+    border-radius: 19px;
+    position: absolute;
+    top: 157px;
+    left: 159px;
+    background-color: #F0DFD2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+
+}
+
+select {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-brown;
+}
+
