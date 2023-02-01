@@ -1,2 +1,36 @@
 $main-brown: #503629;
 $font-family: "Myriad Pro Regular" ;
+
+
+@mixin horizontal_dblBorder{
+  position:absolute;
+  display:block;
+  content:'';
+  background-color: #705E52;
+  width:100%;
+  height:1px;
+  bottom: 0;
+  border-bottom:1px solid #FEFEFE;
+
+}
+
+@mixin vertical_dblBorder{
+  position:absolute;
+  display:block;
+  content:'';
+  background-color: #705E52;
+  width: 1px;
+  border-left: 1px solid #FEFEFE;
+}
+
+
+
+@mixin btn{
+  background-color: $main-brown;
+  color:#FFF9EF;
+  font-family: $font-family;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 400;
+  padding: 3px 10px ;
+}

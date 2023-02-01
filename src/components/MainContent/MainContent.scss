@@ -1,0 +1,74 @@
+@import './../variables';
+
+.content {
+  width: 1110px;
+  height: 592px;
+  background-color: rgba(250, 245, 236, 0.78);
+  margin-top: 37px;
+  font-family: $font-family;
+
+  &__block1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 592px;
+    border-bottom: 1px solid #705E52;
+
+    &::before{
+      height: 629px;
+      @include vertical_dblBorder;
+      margin-left: 604px;
+      margin-top: -37px;
+    }
+  }
+
+  &__mission--header {
+    color: $main-brown;
+    font-weight: 600;
+    font-size: 29px;
+  }
+
+  &__mission--text {
+    width: 427px;
+    height: 168px;
+    color: #1A1A1A;
+    font-size: 20px;
+    margin-top: 55px;
+
+  }
+
+  &__mission--btn {
+    @include btn;
+    width: 187px;
+
+
+  }
+
+  &__mission--photo{
+    z-index: 1;
+  }
+
+  &__mission--heart{
+    position: absolute;
+    bottom: -75px;
+    right: 955px;
+
+  }
+
+
+  &__idea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 174px;
+
+    &--header{
+      font-size: 29px;
+      line-height: 35px;
+      font-family: $font-family;
+      width: 850px;
+      text-align: center;
+    }
+  }
+
+}

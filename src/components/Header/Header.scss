@@ -7,14 +7,8 @@
     height: 730px;
 
     &::after {
-      position:absolute;
-      bottom: 0;
-      display:block;
-      content:'';
-      background-color: #705E52;
-      border-bottom:1px solid #FEFEFE;
-      width:100%;
-      height:1px;
+      @include horizontal_dblBorder;
+
     }
   }
 
@@ -104,13 +98,9 @@
     line-height: 46px;
 
     &::before {
-      position:absolute;
-      display:block;
-      content:'';
-      background-color: #705E52;
-      border-left:1px solid #FEFEFE;
+      @include vertical_dblBorder;
       height:100%;
-      width:1px;
+      width: 2px;
     }
   }
 
